@@ -15,29 +15,30 @@ Applied data cleaning, type standardization, and enrichment in Alteryx/Python. T
 Implemented Star Schema dimensional models (FactSales, DimCustomer, DimProduct, DimStore, DimDate, DimCurrency). This layer powers BI dashboards and analytical queries.
 # 🚀 Project Workflow
 
-### Data Ingestion → Extract raw data into Bronze layer.
+Data Ingestion → Extract raw data into Bronze layer.
 
-### ETL Transformations → Apply business logic & cleaning into Silver layer.
+ETL Transformations → Apply business logic & cleaning into Silver layer.
 
-### Data Warehouse Modeling → Create Gold layer with star schema for analytics.
+Data Warehouse Modeling → Create Gold layer with star schema for analytics.
 
-### Optimization → Use indexes in SQL Server.
+Optimization → Use indexes in SQL Server.
 
-### Visualization → Build Power BI dashboards for business insights.
+Visualization → Build Power BI dashboards for business insights.
 
 # 🛠️ Tech Stack
 
-### Database: SQL Server (staging & DWH)
+Database: SQL Server (staging & DWH)
 
-### ETL Tools: Alteryx, Python (Pandas, SQLAlchemy)
+ETL Tools: Alteryx, Python (Pandas, SQLAlchemy)
 
-### Data Modeling: Dimensional modeling (Kimball methodology – Star Schema)
+Data Modeling: Dimensional modeling (Kimball methodology – Star Schema)
 
-### Architecture: Medallion Architecture (Bronze, Silver, Gold)
+Architecture: Medallion Architecture (Bronze, Silver, Gold)
 
-### BI & Visualization: Power BI
+BI & Visualization: Power BI
 
-### Version Control: GitHub
+Version Control: GitHub
+
 # 📈 Key Features
 
 Automated ETL pipelines from staging → DWH.
@@ -111,4 +112,4 @@ ORDER BY TotalSpent DESC;
 
 ## Conclusion:
 
-This project showcases the integration of Alteryx for efficient ETL processes, Python for meticulous transformations, and SQL Server along with Tableau for insightful analysis. Join me in exploring the intricacies of data engineering, from CSV extraction to strategic insights in the context of an ever-evolving e-commerce industry.
+This project showcases how raw business data can be transformed into a scalable Data Warehouse using Medallion Architecture and turned into actionable insights for decision-making.
