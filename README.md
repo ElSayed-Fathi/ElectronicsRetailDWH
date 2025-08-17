@@ -72,10 +72,10 @@ Experience the synergy of SQL Server and Tableau as We leverage queries to uncov
 ###  Alteryx Workflow :
 ![Alteryx Workflow](https://github.com/ElSayed-Fathi/ElectronicsRetailDWH/blob/main/2.%20ETL%20Pipeline/WorkFlow.png)
 
-## [4. Data Warehouse Model ](https://github.com/ElSayed-Fathi/Data-Engineering-project-for-E-Commerce/tree/cc7b833140ddde630aa206cfcacba4e7d713dc18/5%20Data%20Warehouse%20Dimensional%20Model%20and%20Code)
+## [4. Data Warehouse Model ](https://github.com/ElSayed-Fathi/ElectronicsRetailDWH/blob/main/5.%20Power%20BI%20Charts/Data%20Model.png)
 
 ###  Data Warehouse Model :
-![Data Warehouse Model](Data_Warehouse_Diagram_11_light.png)
+![Data Warehouse Model](https://github.com/ElSayed-Fathi/ElectronicsRetailDWH/blob/main/5.%20Power%20BI%20Charts/Data%20Model.png)
 
 ## [4. Analysis using SQL](https://github.com/ElSayed-Fathi/Data-Engineering-project-for-E-Commerce/tree/1e6ea70c5581a9dd6c38f746ea4f135d3c794e44/6%20SQL%20Analytical%20Queries)
 
