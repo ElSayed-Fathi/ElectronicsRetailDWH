@@ -108,7 +108,28 @@ ORDER BY TotalSpent DESC;
 ##### total sales by month  
 ![Total Sales By Month](https://github.com/ElSayed-Fathi/ElectronicsRetailDWH/blob/main/5.%20Power%20BI%20Charts/Charts/total%20sales%20by%20month.png)
 
-
+## 📂 Repository Structure
+```
+data-warehouse-project/
+│
+├── 1. Sourece Data /                   # Raw datasets used for the project
+│
+├── 2. EtL Pipline /                    # Alteryx Workflow And Containers
+│   ├── Alteryx Worflow /               # data from staging layer to DWH_Autosave.yxmd
+│   ├── Containters                     # Containers For each pipline to move data
+│   ├── WorkFlow.png                    # The Full WorkFolw For The Project
+│
+├── 3. Python Scripts /                 # Python files to extract and transform data
+│   ├── bronze Layer/                   # Bronze Layer From Extracting Data To Load Data in Staging Database
+│   ├── silver Layer/                   # Sliver Layer some Transformations and Data Cleansing directory
+│
+├── 4. SQL Scripts /                    # Test scripts and quality files
+│
+├── README.md                           # Project overview and instructions
+├── LICENSE                             # License information for the repository
+├── .gitignore                          # Files and directories to be ignored by Git
+└── requirements.txt                    # Dependencies and requirements for the project
+```
 
 ## Conclusion:
 
