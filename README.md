@@ -131,9 +131,11 @@ data-warehouse-project/
 ├── 5. Power BI Charts /                # Contains All Charts Files
 │   ├── Charts /                        # Contain Charts
 │   ├── Files /                         # Contain All Files and Dashboard
+|
 ├── Docs /                              # Contains Files included ETL,Data Layers And Data Architecture
 |
 ├── README.md                           # Project overview and instructions
+|
 └──LICENSE                              # License information for the repository
 ```
 
