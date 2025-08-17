@@ -72,37 +72,29 @@ Experience the synergy of SQL Server and Tableau as We leverage queries to uncov
 ###  Alteryx Workflow :
 ![Alteryx Workflow](https://github.com/ElSayed-Fathi/ElectronicsRetailDWH/blob/main/2.%20ETL%20Pipeline/WorkFlow.png)
 
-## [4. Data Warehouse Model ](https://github.com/ElSayed-Fathi/ElectronicsRetailDWH/blob/main/5.%20Power%20BI%20Charts/Data%20Model.png)
+## [Data Warehouse Model ](https://github.com/ElSayed-Fathi/ElectronicsRetailDWH/blob/main/5.%20Power%20BI%20Charts/Data%20Model.png)
 
 ###  Data Warehouse Model :
 ![Data Warehouse Model](https://github.com/ElSayed-Fathi/ElectronicsRetailDWH/blob/main/5.%20Power%20BI%20Charts/Data%20Model.png)
 
-## [4. Analysis using SQL](https://github.com/ElSayed-Fathi/Data-Engineering-project-for-E-Commerce/tree/1e6ea70c5581a9dd6c38f746ea4f135d3c794e44/6%20SQL%20Analytical%20Queries)
-
+## [Analysis using SQL](https://github.com/ElSayed-Fathi/ElectronicsRetailDWH/blob/main/4.%20SQL%20Scripts/3.%20Analytical%20Queries/SQL_Analytical_Queries_on_Global_Electronics_Retailer_DWH.sql)
 Example of the analysis:
 Question: 
 
-Which Logistic Route Has Heavy Traffic In Our E-Commerce? (Delay Frequency)
+Customer Lifetime Value (CLV)
 
 ```sql
-SELECT TOP 10 CONCAT(Sellers.SellerState, ', ', Sellers.SellerCity,' ==>> ', Users.UserState, ', ', Users.UserCity) 'Logistic Route', AVG(SubQuery.MaxDeliveryDelayDays) / 
-           COUNT(DISTINCT(OrderItems.OrderID)) AS 'Average Delivery Days Per Order'
-FROM (
-    SELECT OrderItems.OrderID, MAX(OrderItems.DeliveryDelayDays*1.0) AS MaxDeliveryDelayDays
-    FROM OrderItems
-	WHERE OrderItems.DeliveryDelayCheck = 'Delayed'
-    GROUP BY OrderItems.OrderID
-) AS SubQuery
-JOIN OrderItems ON SubQuery.OrderID = OrderItems.OrderID
-JOIN Users
-ON Users.UserID = OrderItems.UserID
-JOIN Sellers
-ON Sellers.SellerID = OrderItems.SellerID
-WHERE OrderItems.DeliveryDelayCheck = 'Delayed'
-GROUP BY Sellers.SellerState, Sellers.SellerCity, Users.UserState, Users.UserCity
-ORDER BY 'Average Delivery Days Per Order' DESC;
+SELECT 
+    c.CustomerSK,
+    c.Name,
+    SUM(f.ExtendedPriceUS) AS TotalSpent,
+    SUM(f.ProfitUSD) AS TotalProfit
+FROM FactSales f
+JOIN DimCustomer c ON f.CustomerSK = c.CustomerSK
+GROUP BY c.CustomerSK, c.Name
+ORDER BY TotalSpent DESC;
 ```
-## [5. Final Insights](https://github.com/ElSayed-Fathi/Data-Engineering-project-for-E-Commerce/tree/6b65b53ece3c6922144ba7813b2b991c14dde1ea/7%20Data%20Visualization%20Using%20Tableau)
+## [Final Insights](https://github.com/ElSayed-Fathi/Data-Engineering-project-for-E-Commerce/tree/6b65b53ece3c6922144ba7813b2b991c14dde1ea/7%20Data%20Visualization%20Using%20Tableau)
 
 ### Dashboard:
 ![Dashboard](https://github.com/ElSayed-Fathi/Data-Engineering-project-for-E-Commerce/blob/6b65b53ece3c6922144ba7813b2b991c14dde1ea/7%20Data%20Visualization%20Using%20Tableau/Dashboard_1.png)
