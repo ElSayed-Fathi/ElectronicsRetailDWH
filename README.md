@@ -123,12 +123,18 @@ data-warehouse-project/
 │   ├── bronze Layer/                   # Bronze Layer From Extracting Data To Load Data in Staging Database
 │   ├── silver Layer/                   # Sliver Layer some Transformations and Data Cleansing directory
 │
-├── 4. SQL Scripts /                    # Test scripts and quality files
-│
+├── 4. SQL Scripts /                    # Contains All SQL Files
+│   ├── DDL /                           # Data Defination Language For Create Dimensional Modelling
+│   ├── Indexing Tables /               # Create Indexes on Dimension Modelling in DWH For Optimization
+│   ├── Analytical Queries /            # SQL Analytical Queries on Global Electronics Retailer DWH
+|
+├── 5. Power BI Charts /                # Contains All Charts Files
+│   ├── Charts /                        # Contain Charts
+│   ├── Files /                         # Contain All Files and Dashboard
+├── Docs /                              # Contains Files included ETL,Data Layers And Data Architecture
+|
 ├── README.md                           # Project overview and instructions
-├── LICENSE                             # License information for the repository
-├── .gitignore                          # Files and directories to be ignored by Git
-└── requirements.txt                    # Dependencies and requirements for the project
+└──LICENSE                              # License information for the repository
 ```
 
 ## Conclusion:
