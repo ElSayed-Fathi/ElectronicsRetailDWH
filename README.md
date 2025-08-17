@@ -114,7 +114,7 @@ data-warehouse-project/
 │
 ├── 1. Sourece Data /                   # Raw datasets used for the project
 │
-├── 2. EtL Pipline /                    # Alteryx Workflow And Containers
+├── 2. ETL Pipline /                    # Alteryx Workflow And Containers
 │   ├── Alteryx Worflow /               # data from staging layer to DWH_Autosave.yxmd
 │   ├── Containters                     # Containers For each pipline to move data
 │   ├── WorkFlow.png                    # The Full WorkFolw For The Project
