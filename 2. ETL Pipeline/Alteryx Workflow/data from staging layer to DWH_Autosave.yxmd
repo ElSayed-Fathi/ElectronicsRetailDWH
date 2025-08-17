@@ -1,0 +1,1830 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="103" y="3295" width="669" height="310" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Fill FactSales</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Fill FactSales</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="128" y="3380" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" FileFormat="18">odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID="";Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name="";Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication="";TransparentNetworkIPResolution=True|||select * 
+from "silver_sales_Fact"</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>False</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Source=DESKTOP-RT8G23R
+Catalog=staging_db
+Query=select * 
+from "silver_sale...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Order Number" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_sales_Fact&quot;" type="Int64" />
+                <Field name="Line Item" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_sales_Fact&quot;" type="Int64" />
+                <Field name="Order Date" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_sales_Fact&quot;" type="DateTime" />
+                <Field name="Delivery Date" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_sales_Fact&quot;" type="DateTime" />
+                <Field name="CustomerKey" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_sales_Fact&quot;" type="Int64" />
+                <Field name="StoreKey" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_sales_Fact&quot;" type="Int64" />
+                <Field name="ProductKey" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_sales_Fact&quot;" type="Int64" />
+                <Field name="Quantity" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_sales_Fact&quot;" type="Int64" />
+                <Field name="OrderDateKey" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_sales_Fact&quot;" type="Int32" />
+                <Field name="DeliveryDateKey" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_sales_Fact&quot;" type="Double" />
+                <Field name="CustomerSK" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_sales_Fact&quot;" type="Int64" />
+                <Field name="Currency" size="16777216" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_sales_Fact&quot;" type="V_String" />
+                <Field name="ExtendedPriceUSD" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_sales_Fact&quot;" type="Double" />
+                <Field name="ProfitUSD" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_sales_Fact&quot;" type="Double" />
+                <Field name="Exchange" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_sales_Fact&quot;" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="344" y="3344" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\METRA\AppData\Local\Temp\Engine_24032_f45244bd216648f28c5c70ac76b3dac7_\Engine_24032_553f5cf2b3205945ac50ed6848d47397~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="344" y="3416" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Order Number" selected="True" />
+                <SelectField field="Line Item" selected="True" />
+                <SelectField field="OrderDateKey" selected="True" />
+                <SelectField field="DeliveryDateKey" selected="True" />
+                <SelectField field="CustomerSK" selected="True" />
+                <SelectField field="ProductKey" selected="True" />
+                <SelectField field="StoreKey" selected="True" />
+                <SelectField field="Currency" selected="True" />
+                <SelectField field="Exchange" selected="True" />
+                <SelectField field="Quantity" selected="True" />
+                <SelectField field="ExtendedPriceUSD" selected="True" />
+                <SelectField field="ProfitUSD" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+                <SelectField field="Order Date" selected="False" type="Date" size="10" />
+                <SelectField field="Delivery Date" selected="False" type="Date" size="10" />
+                <SelectField field="CustomerKey" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="63">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="438" y="3414" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF IsNull([DeliveryDateKey]) THEN 19000101&#xA;ELSE [DeliveryDateKey]&#xA;ENDIF&#xA;" field="DeliveryDateeKey" size="255" type="V_WString" />
+                <FormulaField expression="IF IsNull([ExtendedPriceUSD]) THEN 0&#xA;ELSE [ExtendedPriceUSD]&#xA;ENDIF&#xA;&#xA;" field="ExtendedPriceeUSD" size="255" type="V_WString" />
+                <FormulaField expression="IF IsNull([ProfitUSD]) THEN 0&#xA;ELSE [ProfitUSD]&#xA;ENDIF&#xA;" field="ProfittUSD" size="255" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DeliveryDateeKey = IF IsNull([DeliveryDateKey]) THEN 19000101
+ELSE [DeliveryDate...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="64">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="630" y="3366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\METRA\AppData\Local\Temp\Engine_24032_f45244bd216648f28c5c70ac76b3dac7_\Engine_24032_f5a434b176f96849ac37a2e1fd10263f~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="65">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="534" y="3414" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Order Number" selected="True" />
+                <SelectField field="Line Item" selected="True" />
+                <SelectField field="OrderDateKey" selected="True" />
+                <SelectField field="DeliveryDateeKey" selected="True" type="Double" size="8" />
+                <SelectField field="CustomerSK" selected="True" />
+                <SelectField field="ProductKey" selected="True" />
+                <SelectField field="StoreKey" selected="True" />
+                <SelectField field="Currency" selected="True" size="50" />
+                <SelectField field="Exchange" selected="True" />
+                <SelectField field="Quantity" selected="True" />
+                <SelectField field="ExtendedPriceeUSD" selected="True" />
+                <SelectField field="ProfittUSD" selected="True" type="Double" size="8" />
+                <SelectField field="*Unknown" selected="True" />
+                <SelectField field="DeliveryDateKey" selected="False" />
+                <SelectField field="[ExtendedPriceeUSD]" selected="False" type="Double" size="8" />
+                <SelectField field="ExtendedPriceUSD" selected="False" />
+                <SelectField field="ProfitUSD" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="66">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="642" y="3426" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="18">odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID="";Initial Catalog=Global_Electronics_Retailer_DWH;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name="";Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication="";TransparentNetworkIPResolution=True|||FactSales</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <TransactionSize>0</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <TableStyle>Quoted</TableStyle>
+                <AppendMap>
+                  <AppendMapping mode="Custom">
+                    <Field Source="Order Number" Dest="SalesOrderNumber" />
+                    <Field Source="Line Item" Dest="SalesLineItem" />
+                    <Field Source="OrderDateKey" Dest="OrderDateKey" />
+                    <Field Source="DeliveryDateeKey" Dest="DeliveryDateKey" />
+                    <Field Source="CustomerSK" Dest="CustomerSK" />
+                    <Field Source="ProductKey" Dest="ProductKey" />
+                    <Field Source="StoreKey" Dest="StoreKey" />
+                    <Field Source="Currency" Dest="CurrencyCode" />
+                    <Field Source="Exchange" Dest="ExchangeRateUSD" />
+                    <Field Source="Quantity" Dest="Quantity" />
+                    <Field Source="ExtendedPriceeUSD" Dest="ExtendedPriceUS" />
+                    <Field Source="ProfittUSD" Dest="ProfitUSD" />
+                  </AppendMapping>
+                </AppendMap>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Delete</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Source=DESKTOP-RT8G23R
+Catalog=Global_Electronics_Retailer_DWH
+Query=FactSales</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="0" y="2873" width="935" height="327" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Fill DimCurrency</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Fill DimCurrency</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="24" y="2994" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" FileFormat="18">odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID="";Initial Catalog=Global_Electronics_Retailer_DWH;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name="";Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication="";TransparentNetworkIPResolution=True|||select * 
+from "staging_db"."dbo"."silver_currency_Dim"</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>False</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Source=DESKTOP-RT8G23R
+Catalog=Global_Electronics_Retailer_DWH
+Query=select * 
+from "staging_db"...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Date" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=Global_Electronics_Retailer_DWH;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;staging_db&quot;.&quot;dbo&quot;.&quot;silver_currency_Dim&quot;" type="DateTime" />
+                <Field name="Currency" size="16777216" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=Global_Electronics_Retailer_DWH;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;staging_db&quot;.&quot;dbo&quot;.&quot;silver_currency_Dim&quot;" type="V_String" />
+                <Field name="Exchange" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=Global_Electronics_Retailer_DWH;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;staging_db&quot;.&quot;dbo&quot;.&quot;silver_currency_Dim&quot;" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="241" y="3018" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Date" selected="False" type="Date" size="10" />
+                <SelectField field="Currency" selected="True" size="10" />
+                <SelectField field="Exchange" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="349" y="3018" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Currency] = &quot;USD&quot; THEN &quot;US Dollar&quot;&#xA;ELSEIF [Currency] = &quot;EUR&quot; THEN &quot;Euro&quot;&#xA;ELSEIF [Currency] = &quot;GBP&quot; THEN &quot;British Pound&quot;&#xA;ELSEIF [Currency] = &quot;JPY&quot; THEN &quot;Japanese Yen&quot;&#xA;ELSEIF [Currency] = &quot;CAD&quot; THEN &quot;Canadian Dollar&quot;&#xA;ELSEIF [Currency] = &quot;AUD&quot; THEN &quot;Australian Dollar&quot;&#xA;ELSE &quot;Other&quot;&#xA;ENDIF&#xA;" field="CurrencyName" size="50" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>CurrencyName = IF [Currency] = "USD" THEN "US Dollar"
+ELSEIF [Currency] = "EUR" ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="58">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="685" y="2922" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Currency" />
+                <Field field="CurrencyName" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="805" y="3006" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="18">odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID="";Initial Catalog=Global_Electronics_Retailer_DWH;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name="";Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication="";TransparentNetworkIPResolution=True|||DimCurrency</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <TransactionSize>0</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <TableStyle>Quoted</TableStyle>
+                <AppendMap>
+                  <AppendMapping mode="Custom">
+                    <Field Source="Currency" Dest="CurrencyCode" />
+                    <Field Source="CurrencyName" Dest="CurrencyName" />
+                  </AppendMapping>
+                </AppendMap>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Delete</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Source=DESKTOP-RT8G23R
+Catalog=Global_Electronics_Retailer_DWH
+Query=DimCurrency</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="0" y="2453" width="755" height="396" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Fill DimCustomer</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Fill DimCustomer</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="24" y="2526" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" FileFormat="18">odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID="";Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name="";Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication="";TransparentNetworkIPResolution=True|||select * 
+from "silver_customers_Dim"</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>False</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Source=DESKTOP-RT8G23R
+Catalog=staging_db
+Query=select * 
+from "silver_cust...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="CustomerSK" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_customers_Dim&quot;" type="Int64" />
+                <Field name="CustomerKey" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_customers_Dim&quot;" type="Int64" />
+                <Field name="Name" size="16777216" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_customers_Dim&quot;" type="V_String" />
+                <Field name="Gender" size="16777216" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_customers_Dim&quot;" type="V_String" />
+                <Field name="Birthday" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_customers_Dim&quot;" type="DateTime" />
+                <Field name="City" size="16777216" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_customers_Dim&quot;" type="V_String" />
+                <Field name="State Code" size="16777216" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_customers_Dim&quot;" type="V_String" />
+                <Field name="State" size="16777216" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_customers_Dim&quot;" type="V_String" />
+                <Field name="Zip Code" size="16777216" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_customers_Dim&quot;" type="V_String" />
+                <Field name="Country" size="16777216" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_customers_Dim&quot;" type="V_String" />
+                <Field name="Continent" size="16777216" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_customers_Dim&quot;" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="265" y="2502" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\METRA\AppData\Local\Temp\Engine_20728_e594d7784e9c4ce3b9dfae265ba21f05_\Engine_20728_9305a5875a8a7c4397b0f199eba27e03~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="265" y="2586" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Birthday" selected="True" type="Date" size="10" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="373" y="2574" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\METRA\AppData\Local\Temp\Engine_20728_e594d7784e9c4ce3b9dfae265ba21f05_\Engine_20728_4aee33ae4f096546b81ca2948cabb8d8~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings>
+            <Position x="421" y="2646" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"CustomerSK"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="517" y="2598" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\METRA\AppData\Local\Temp\Engine_20728_e594d7784e9c4ce3b9dfae265ba21f05_\Engine_20728_a332d6fad17c8c40aa3cf8170e2cefa3~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="517" y="2670" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="CustomerSK" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="54">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="625" y="2658" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="18">odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID="";Initial Catalog=Global_Electronics_Retailer_DWH;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name="";Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication="";TransparentNetworkIPResolution=True|||DimCustomer</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <TransactionSize>0</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <TableStyle>Quoted</TableStyle>
+                <AppendMap>
+                  <AppendMapping mode="Custom">
+                    <Field Source="CustomerSK" Dest="CustomerSK" />
+                    <Field Source="CustomerKey" Dest="CustomerKey" />
+                    <Field Source="Name" Dest="Name" />
+                    <Field Source="Gender" Dest="Gender" />
+                    <Field Source="Birthday" Dest="Birthday" />
+                    <Field Source="City" Dest="City" />
+                    <Field Source="State Code" Dest="StateCode" />
+                    <Field Source="State" Dest="State" />
+                    <Field Source="Zip Code" Dest="ZipCode" />
+                    <Field Source="Country" Dest="Country" />
+                    <Field Source="Continent" Dest="Continent" />
+                  </AppendMapping>
+                </AppendMap>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Delete</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Source=DESKTOP-RT8G23R
+Catalog=Global_Electronics_Retailer_DWH
+Query=DimCustomer</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="66" y="1483" width="648" height="393" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Fill DimDate</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Fill DimDate</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="91" y="1640" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" FileFormat="18">odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID="";Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name="";Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication="";TransparentNetworkIPResolution=True|||select * 
+from "silver_date_Dim"</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>False</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Source=DESKTOP-RT8G23R
+Catalog=staging_db
+Query=select * 
+from "silver_date...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Date" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_date_Dim&quot;" type="DateTime" />
+                <Field name="DateKey" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_date_Dim&quot;" type="Int32" />
+                <Field name="Year" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_date_Dim&quot;" type="Int64" />
+                <Field name="Month" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_date_Dim&quot;" type="Int64" />
+                <Field name="Day" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_date_Dim&quot;" type="Int64" />
+                <Field name="Quarter" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_date_Dim&quot;" type="Int64" />
+                <Field name="Week" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_date_Dim&quot;" type="Int64" />
+                <Field name="DayOfWeek" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_date_Dim&quot;" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="428" y="1532" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\METRA\AppData\Local\Temp\Engine_21392_ecda06626e6346d18c54ce09b09220cf_\Engine_21392_7dfca4a9806fd24fabfb4a360e77b602~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="332" y="1664" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="DateKey" selected="True" />
+                <SelectField field="Date" selected="True" type="Date" size="10" />
+                <SelectField field="Year" selected="True" />
+                <SelectField field="Month" selected="True" />
+                <SelectField field="Day" selected="True" />
+                <SelectField field="Quarter" selected="True" />
+                <SelectField field="Week" selected="True" />
+                <SelectField field="DayOfWeek" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="440" y="1628" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\METRA\AppData\Local\Temp\Engine_21392_ecda06626e6346d18c54ce09b09220cf_\Engine_21392_7f0cdf95a5b65049b1bbad5499848efc~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="43">
+          <GuiSettings>
+            <Position x="416" y="1700" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"DateKey"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="584" y="1700" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="18">odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID="";Initial Catalog=Global_Electronics_Retailer_DWH;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name="";Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication="";TransparentNetworkIPResolution=True|||DimDate</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <TransactionSize>0</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <TableStyle>Quoted</TableStyle>
+                <AppendMap>
+                  <AppendMapping mode="Custom">
+                    <Field Source="DateKey" Dest="DateKey" />
+                    <Field Source="Date" Dest="Date" />
+                    <Field Source="Year" Dest="Year" />
+                    <Field Source="Month" Dest="Month" />
+                    <Field Source="Day" Dest="Day" />
+                    <Field Source="Quarter" Dest="Quarter" />
+                    <Field Source="Week" Dest="Week" />
+                    <Field Source="DayOfWeek" Dest="DayOfWeek" />
+                  </AppendMapping>
+                </AppendMap>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Delete</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Source=DESKTOP-RT8G23R
+Catalog=Global_Electronics_Retailer_DWH
+Query=DimDate</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="158" y="1039" width="478" height="396" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Fill DimProduct</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Fill DimProduct</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="183" y="1172" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" FileFormat="18">odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID="";Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name="";Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication="";TransparentNetworkIPResolution=True|||select * 
+from "silver_products_Dim"</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>False</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Source=DESKTOP-RT8G23R
+Catalog=staging_db
+Query=select * 
+from "silver_prod...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ProductKey" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_products_Dim&quot;" type="Int64" />
+                <Field name="Product Name" size="16777216" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_products_Dim&quot;" type="V_String" />
+                <Field name="Brand" size="16777216" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_products_Dim&quot;" type="V_String" />
+                <Field name="Color" size="16777216" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_products_Dim&quot;" type="V_String" />
+                <Field name="Unit Cost USD" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_products_Dim&quot;" type="Double" />
+                <Field name="Unit Price USD" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_products_Dim&quot;" type="Double" />
+                <Field name="SubcategoryKey" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_products_Dim&quot;" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="363" y="1088" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\METRA\AppData\Local\Temp\Engine_19616_2601392159a24628b407ede1875b0e33_\Engine_19616_949041fd9828d143a0a77122843514e8~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="375" y="1160" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="495" y="1148" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\METRA\AppData\Local\Temp\Engine_19616_2601392159a24628b407ede1875b0e33_\Engine_19616_35bda96a9b3c5c40a3aae9df0bb98ec3~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="506" y="1244" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="18">odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID="";Initial Catalog=Global_Electronics_Retailer_DWH;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name="";Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication="";TransparentNetworkIPResolution=True|||DimProduct</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <TransactionSize>0</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <TableStyle>Quoted</TableStyle>
+                <AppendMap>
+                  <AppendMapping mode="Custom">
+                    <Field Source="ProductKey" Dest="ProductKey" />
+                    <Field Source="Product Name" Dest="ProductName" />
+                    <Field Source="Brand" Dest="Brand" />
+                    <Field Source="Color" Dest="Color" />
+                    <Field Source="Unit Cost USD" Dest="UnitCostUSD" />
+                    <Field Source="Unit Price USD" Dest="UnitPriceUSD" />
+                    <Field Source="SubcategoryKey" Dest="SubcategoryKey" />
+                  </AppendMapping>
+                </AppendMap>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Delete</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Source=DESKTOP-RT8G23R
+Catalog=Global_Electronics_Retailer_DWH
+Query=DimProduct</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="89" y="715" width="565" height="285" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Fill DimStore</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Fill DimStore</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="114" y="764" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" FileFormat="18">odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID="";Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name="";Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication="";TransparentNetworkIPResolution=True|||select * 
+from "silver_stores_Dim"</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>False</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Source=DESKTOP-RT8G23R
+Catalog=staging_db
+Query=select * 
+from "silver_stor...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="StoreKey" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_stores_Dim&quot;" type="Int64" />
+                <Field name="Country" size="16777216" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_stores_Dim&quot;" type="V_String" />
+                <Field name="State" size="16777216" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_stores_Dim&quot;" type="V_String" />
+                <Field name="Square Meters" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_stores_Dim&quot;" type="Double" />
+                <Field name="Open Date" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_stores_Dim&quot;" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="344" y="824" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Open Date" selected="True" type="Date" size="10" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="332" y="764" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\METRA\AppData\Local\Temp\Engine_19716_0067e3eaaea94e5f9cd508c2f53d9ea0_\Engine_19716_7e9cbf36b1e64443929d625221fba777~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings>
+            <Position x="440" y="824" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"StoreKey","Square Meters"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="524" y="824" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="18">odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID="";Initial Catalog=Global_Electronics_Retailer_DWH;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name="";Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication="";TransparentNetworkIPResolution=True|||DimStore</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <TransactionSize>0</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <TableStyle>Quoted</TableStyle>
+                <AppendMap>
+                  <AppendMapping mode="Custom">
+                    <Field Source="StoreKey" Dest="StoreKey" />
+                    <Field Source="Country" Dest="Country" />
+                    <Field Source="State" Dest="State" />
+                    <Field Source="Square Meters" Dest="SquareMeters" />
+                    <Field Source="Open Date" Dest="OpenDate" />
+                  </AppendMapping>
+                </AppendMap>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Delete</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Source=DESKTOP-RT8G23R
+Catalog=Global_Electronics_Retailer_DWH
+Query=DimStore</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="548" y="776" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\METRA\AppData\Local\Temp\Engine_19716_0067e3eaaea94e5f9cd508c2f53d9ea0_\Engine_19716_4f815d92fa667f42b917a84188274585~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="90" y="355" width="576" height="336" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Fill DimSubCategory</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Fill DimSubCategory</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="320" y="500" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="332" y="404" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\METRA\AppData\Local\Temp\Engine_21832_dc079f32e76743e5b8ca2ca2e28d7794_\Engine_21832_cacf6d7bfe969c4ca3f4d31e7034c90b~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="115" y="452" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" FileFormat="18">odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID="";Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name="";Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication="";TransparentNetworkIPResolution=True|||select * 
+from "silver_subcategory_Dim"</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>False</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Source=DESKTOP-RT8G23R
+Catalog=staging_db
+Query=select * 
+from "silver_subc...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="SubcategoryKey" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_subcategory_Dim&quot;" type="Int64" />
+                <Field name="Subcategory" size="16777216" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_subcategory_Dim&quot;" type="V_String" />
+                <Field name="CategoryKey" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_subcategory_Dim&quot;" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="32">
+          <GuiSettings>
+            <Position x="428" y="500" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"SubcategoryKey"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="536" y="500" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="18">odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID="";Initial Catalog=Global_Electronics_Retailer_DWH;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name="";Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication="";TransparentNetworkIPResolution=True|||DimSubcategory</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <TransactionSize>0</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <TableStyle>Quoted</TableStyle>
+                <AppendMap>
+                  <AppendMapping mode="Custom">
+                    <Field Source="SubcategoryKey" Dest="SubcategoryKey" />
+                    <Field Source="Subcategory" Dest="Subcategory" />
+                    <Field Source="CategoryKey" Dest="CategoryKey" />
+                  </AppendMapping>
+                </AppendMap>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Delete</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Source=DESKTOP-RT8G23R
+Catalog=Global_Electronics_Retailer_DWH
+Query=DimSubcategory</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="54" width="588" height="277" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Fill DimCategory</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Fill DimCategory</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" FileFormat="18">odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID="";Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name="";Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication="";TransparentNetworkIPResolution=True|||select * 
+from "silver_category_Dim"</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>False</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Source=DESKTOP-RT8G23R
+Catalog=staging_db
+Query=select * 
+from "silver_cate...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="CategoryKey" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_category_Dim&quot;" type="Int64" />
+                <Field name="Category" size="16777216" source="File: odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID=&quot;&quot;;Initial Catalog=staging_db;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name=&quot;&quot;;Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication=&quot;&quot;;TransparentNetworkIPResolution=True|||select * &#xA;from &quot;silver_category_Dim&quot;" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="260" y="128" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\METRA\AppData\Local\Temp\Engine_15644_b07db5c8fc6d41a49427c67b9b9bebcf_\Engine_15644_6b28785078733e49ba3a8f829e2ddef9~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="320" y="140" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings>
+            <Position x="404" y="139" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"CategoryKey","Category"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="512" y="140" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="18">odb:Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Persist Security Info=False;User ID="";Initial Catalog=Global_Electronics_Retailer_DWH;Data Source=DESKTOP-RT8G23R;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-RT8G23R;Initial File Name="";Use Encryption for Data=False;Tag with column collation when possible=False;MARS Connection=False;DataTypeCompatibility=0;Trust Server Certificate=False;Application Intent=READWRITE;MultiSubnetFailover=False;Use FMTONLY=False;Authentication="";TransparentNetworkIPResolution=True|||DimCategory</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <TransactionSize>0</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <TableStyle>Quoted</TableStyle>
+                <AppendMap>
+                  <AppendMapping mode="Custom">
+                    <Field Source="CategoryKey" Dest="CategoryKey" />
+                    <Field Source="Category" Dest="Category" />
+                  </AppendMapping>
+                </AppendMap>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Delete</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Source=DESKTOP-RT8G23R
+Catalog=Global_Electronics_Retailer_DWH
+Query=DimCategory</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Unique" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="47" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output26" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output26" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Unique" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="43" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output26" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="35" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output26" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output26" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="32" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output26" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="25" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output26" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>data from staging layer to DWH_Autosave</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="5a970111-bcb7-4a14-99cf-76326e2591b4" />
+      <Telemetry>
+        <PreviousWorkflowId value="cd3fd4b1-8622-4571-a7c6-fa5cc8b46eef" />
+        <OriginWorkflowId value="21b41847-1118-4bd0-9dbe-d9e7e8738873" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
