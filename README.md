@@ -5,13 +5,13 @@ This project demonstrates the end-to-end design and implementation of a Data War
 
 We adopted the Medallion Architecture (Bronze → Silver → Gold) to structure our data layers:
 
-## 🔹 Bronze Layer (Raw/Staging):
+#### 🔹 Bronze Layer (Raw/Staging):
 Stores raw data ingested from multiple sources (SQL Server, CSV files, APIs). Data is loaded with minimal transformations for traceability.
 
-## 🔹 Silver Layer (Cleaned & Standardized):
+#### 🔹 Silver Layer (Cleaned & Standardized):
 Applied data cleaning, type standardization, and enrichment in Alteryx/Python. This layer provides reliable, deduplicated, and business-ready data tables.
 
-## 🔹 Gold Layer (Business/Analytics):
+#### 🔹 Gold Layer (Business/Analytics):
 Implemented Star Schema dimensional models (FactSales, DimCustomer, DimProduct, DimStore, DimDate, DimCurrency). This layer powers BI dashboards and analytical queries.
 # 🚀 Project Workflow
 
