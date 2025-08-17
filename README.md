@@ -67,22 +67,10 @@ Delve into the intricacies of data modeling, where the structure of the data war
 Experience the synergy of SQL Server and Tableau as We leverage queries to uncover valuable insights, enabling informed decision-making in the dynamic e-commerce landscape.
 
 
-
-## [1. Source Data](https://github.com/ElSayed-Fathi/Data-Engineering-project-for-E-Commerce/blob/39ad69d2d37099fa41b76d7e503a428064980460/1%20Data%20Sources/README%20(2).md)
-
-
-## Data Source:
-![Data Source](source_data.png)
-
-## [2. ETL Using Python](https://github.com/ElSayed-Fathi/Data-Engineering-project-for-E-Commerce/tree/0ebbe62252ef0016922c4cb9b87696cd8b87dff1/1%20Data%20Sources)
-
-### ETL Using Python:
-![ETL Using Python](code_example.PNG)
-
-## [3. Alteryx Workflow ](https://github.com/ElSayed-Fathi/Data-Engineering-project-for-E-Commerce/tree/b23186f3ff775672d3c36ae8d8ae24422dd205e0/2%20Staging%20Layer)
+## [Alteryx Workflow ](https://github.com/ElSayed-Fathi/ElectronicsRetailDWH/blob/main/2.%20ETL%20Pipeline/WorkFlow.png)
 
 ###  Alteryx Workflow :
-![Alteryx Workflow](https://github.com/ElSayed-Fathi/Data-Engineering-project-for-E-Commerce/blob/b23186f3ff775672d3c36ae8d8ae24422dd205e0/2%20Staging%20Layer/Full%20Workflow.PNG)
+![Alteryx Workflow](https://github.com/ElSayed-Fathi/ElectronicsRetailDWH/blob/main/2.%20ETL%20Pipeline/WorkFlow.png)
 
 ## [4. Data Warehouse Model ](https://github.com/ElSayed-Fathi/Data-Engineering-project-for-E-Commerce/tree/cc7b833140ddde630aa206cfcacba4e7d713dc18/5%20Data%20Warehouse%20Dimensional%20Model%20and%20Code)
 
