@@ -79,7 +79,6 @@ Experience the synergy of SQL Server and Tableau as We leverage queries to uncov
 
 ## [Analysis using SQL](https://github.com/ElSayed-Fathi/ElectronicsRetailDWH/blob/main/4.%20SQL%20Scripts/3.%20Analytical%20Queries/SQL_Analytical_Queries_on_Global_Electronics_Retailer_DWH.sql)
 Example of the analysis:
-Question: 
 
 Customer Lifetime Value (CLV)
 
@@ -94,21 +93,19 @@ JOIN DimCustomer c ON f.CustomerSK = c.CustomerSK
 GROUP BY c.CustomerSK, c.Name
 ORDER BY TotalSpent DESC;
 ```
-## [Final Insights](https://github.com/ElSayed-Fathi/Data-Engineering-project-for-E-Commerce/tree/6b65b53ece3c6922144ba7813b2b991c14dde1ea/7%20Data%20Visualization%20Using%20Tableau)
-
+## [Final Insights](https://github.com/ElSayed-Fathi/ElectronicsRetailDWH/blob/main/5.%20Power%20BI%20Charts/Files/dashboard.png)
 ### Dashboard:
-![Dashboard](https://github.com/ElSayed-Fathi/Data-Engineering-project-for-E-Commerce/blob/6b65b53ece3c6922144ba7813b2b991c14dde1ea/7%20Data%20Visualization%20Using%20Tableau/Dashboard_1.png)
-
+![Dashboard](https://github.com/ElSayed-Fathi/ElectronicsRetailDWH/blob/main/5.%20Power%20BI%20Charts/Files/dashboard.png)
 ### Examples Of Useful Insights : 
 
-##### Best Payment Methods 
-![Best Payment Methods](https://github.com/ElSayed-Fathi/Data-Engineering-project-for-E-Commerce/blob/6b65b53ece3c6922144ba7813b2b991c14dde1ea/7%20Data%20Visualization%20Using%20Tableau/Best_Payment_Method.png)
+##### profit_margin_by_category 
+![Profit_Margin_By_Category](https://github.com/ElSayed-Fathi/ElectronicsRetailDWH/blob/main/5.%20Power%20BI%20Charts/Charts/profit_margin_by_category.png)
 
-##### Total Orders Based On Product Category 
-![Total Orders Based On Product Category](https://github.com/ElSayed-Fathi/Data-Engineering-project-for-E-Commerce/blob/91afb2b76442a9e7325dcbc40609e71e5217fa42/7%20Data%20Visualization%20Using%20Tableau/Best_Selling_Category.PNG)
+##### total profit by category. 
+![Total Profit By On Category](https://github.com/ElSayed-Fathi/ElectronicsRetailDWH/blob/main/5.%20Power%20BI%20Charts/Charts/total%20profit%20by%20category.png)
 
-##### Total Orders Based On Year And Quarters  
-![Total Orders Based On Year And Quarters](https://github.com/ElSayed-Fathi/Data-Engineering-project-for-E-Commerce/blob/91afb2b76442a9e7325dcbc40609e71e5217fa42/7%20Data%20Visualization%20Using%20Tableau/Total_Order_By_year_and_Quarters.png)
+##### total sales by month  
+![Total Sales By Month](https://github.com/ElSayed-Fathi/ElectronicsRetailDWH/blob/main/5.%20Power%20BI%20Charts/Charts/total%20sales%20by%20month.png)
 
 
 
