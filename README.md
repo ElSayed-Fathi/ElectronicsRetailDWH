@@ -51,7 +51,7 @@ Partitioned fact table for performance on large volumes of data.
 Power BI dashboards with interactive filters for time, region, product, and currency.
 
 ## Data architecture
-![Architecture Diagram]([Docs/Data Warehouse Architecture.drawio.png](https://github.com/ElSayed-Fathi/ElectronicsRetailDWH/blob/main/Docs/Data%20Warehouse%20Architecture.drawio.png))
+![Architecture Diagram]([Docs/Data Warehouse Architecture.drawio.png](https://github.com/ElSayed-Fathi/ElectronicsRetailDWH/blob/main/Docs/Data%20Warehouse%20Architecture.drawio.png)
 ## Key Components:
 
 #### Python Transformations:
